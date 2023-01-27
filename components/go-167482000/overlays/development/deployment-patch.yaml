@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-167482000
+  namespace: skhileri
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:093d83db9b61fb5879e4a725452033eae400a6c9fc2f03d3256ee15b597fa2b0
+        name: container-image
+        resources: {}
+status: {}
